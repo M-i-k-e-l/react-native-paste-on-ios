@@ -58,9 +58,8 @@ const App: () => React$Node = () => {
             </View>
 
             {/*
-              Bug when:
-              container has: flexDirection: 'row'
-              TextInput has: textAlign: 'center'  +  placeholder
+              Placeholder is shorter than TextInput size --> no bug
+              (This is more of an estimation than a fact)
             */}
             <View
               style={[
